@@ -1,0 +1,46 @@
+[
+  {
+    "name": "保本/保收益承诺",
+    "severity": "high",
+    "category": "收益承诺",
+    "pattern": "保本|保收益|保本金|刚性兑付|稳赚不赔|稳赚|无风险收益|零风险收益"
+  },
+  {
+    "name": "具体收益数字承诺",
+    "severity": "high",
+    "category": "收益承诺",
+    "pattern": "年化[0-9]+%|年化收益率[0-9]|预期收益[0-9]+%|保证[0-9]+%|(?i)guaranteed return|承诺[0-9]+%"
+  },
+  {
+    "name": "荐股-直接买卖指令",
+    "severity": "high",
+    "category": "荐股",
+    "pattern": "买入[这该此那此支只]|卖出[这该此那此支只]|必涨|必跌|马上买|立即买|抄底|追涨|全仓买入"
+  },
+  {
+    "name": "荐股-牛股/内幕暗示",
+    "severity": "medium",
+    "category": "荐股",
+    "pattern": "牛股|黑马|内部消息|内幕|庄家|主力建仓|目标价[0-9]|代码[0-9]{6}|涨停板敢死队"
+  },
+  {
+    "name": "绝对化夸大宣传",
+    "severity": "medium",
+    "category": "夸大宣传",
+    "pattern": "100%准确|百分百|稳赢|包赚|绝对收益|零风险|(?i)guaranteed|稳赚不亏|一本万利"
+  },
+  {
+    "name": "引流话术",
+    "severity": "medium",
+    "category": "引流",
+    "pattern": "加微信|私聊|扫码进群|加我好友|一对一指导|老师带单|荐股群|免费领牛股"
+  },
+  {
+    "name": "AI生成内容未标识",
+    "type": "missing_marker",
+    "severity": "low",
+    "category": "AI标识",
+    "message": "全文未检测到 AI 生成内容标识（监管建议显著标识）",
+    "markers": ["由人工智能生成", "人工智能生成", "AI生成", "AI 生成", "本内容由AI", "AIGC", "智能生成"]
+  }
+]

@@ -1,0 +1,7 @@
+# 工具自身的源文件与文档不扫（避免规则定义被自家扫描器反复命中）
+*.py
+rules.json
+README.md
+tests/
+.github/
+.fincomplianceignore
